@@ -1,4 +1,5 @@
-name: Create directory structure
+---
+- name: Create directory structure
   ansible.windows.win_file:
     path: C:\Users\srv-hc\Desktop\ansiblex
     state: directory
