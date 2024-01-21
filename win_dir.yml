@@ -2,7 +2,7 @@
 - name: win_file module demo
   hosts: all
   vars:
-    mydir: 'D:\ansiblex'
+    mydir: 'C:\ansiblex'
   tasks:
     - name: Create a directory
       ansible.windows.win_file:
