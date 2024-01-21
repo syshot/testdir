@@ -1,5 +1,10 @@
 ---
-- name: Create directory structure
-  ansible.windows.win_file:
-    path: C:\Users\srv-hc\Desktop\ansiblex
-    state: directory
+- name: win_file module demo
+  hosts: all
+  vars:
+    mydir: 'C:\Users\srv-hc\Desktop\ansiblex'
+  tasks:
+    - name: Create a directory
+      ansible.windows.win_file:
+        path: "{{ mydir }}"
+        state: directory
