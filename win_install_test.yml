@@ -7,4 +7,4 @@
   - name: Download the 7-Zip package
     win_get_url:
       url: https://www.7-zip.org/a/7z2301-x64.exe
-      dest: "{{ mydir }}"
+      dest: 'C:\ansiblex'
