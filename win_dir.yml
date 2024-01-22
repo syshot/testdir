@@ -6,4 +6,5 @@
   tasks:
     - name: Create a directory
       ansible.windows.win_file:
-        path: 'C:\ansiblex'
+        path: "{{ mydir }}"
+        state: directory
